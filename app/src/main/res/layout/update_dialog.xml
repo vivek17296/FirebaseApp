@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName"
+        android:hint="Enter Name"/>
+
+    <Spinner
+        android:id="@+id/SpinnerGenres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/genres"
+        android:layout_marginTop="10dp"></Spinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/buttonUpdateArtist"
+            android:text="Update Artist"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/buttonDeleteArtist"
+            android:text="Delete Artist"/>
+    </LinearLayout>
+
+</LinearLayout>
